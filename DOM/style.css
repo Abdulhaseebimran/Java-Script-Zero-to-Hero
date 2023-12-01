@@ -1,0 +1,26 @@
+body{
+    background-color: burlywood;
+}
+
+h1{
+    color: blue;
+    text-transform: uppercase;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
