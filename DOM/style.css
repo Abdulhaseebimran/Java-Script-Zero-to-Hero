@@ -32,3 +32,14 @@ button{
     color: white;
     padding: 10px 10px;
 }
+
+.content{
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.newClass{
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+}

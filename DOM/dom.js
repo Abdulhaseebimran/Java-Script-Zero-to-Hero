@@ -92,14 +92,48 @@
 
 // create element and append child
 
-let newBtn = document.createElement("button");
-newBtn.innerText = "Click Me!";
-console.log(newBtn);
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "Click Me!";
+// console.log(newBtn);
 
 // let div = document.querySelector("div");
-let p = document.querySelector("p");
+// let p = document.querySelector("p");
 // div.append(newBtn)
 // div.prepend(newBtn);
 // div.before(newBtn);
 // div.after(newBtn);
-p.after(newBtn);
+// p.after(newBtn);
+
+// let newHeading = document.createElement("h1");
+// newHeading.innerHTML = "<i>Hi, I am New!</i>";
+
+// document.querySelector("body").prepend(newHeading);
+
+// remove nodes
+// p.remove();
+
+// const para = document.createElement("p");
+// document.body.appendChild(para);
+// para.innerText = "Hello World";
+
+
+// practice questions
+
+let newBtn = document.createElement("button");
+newBtn.innerText = "Click Me!";
+
+newBtn.style.color = "white";
+newBtn.style.backgroundColor = "red";
+
+document.querySelector("body").prepend(newBtn);
+
+// 2nd question
+
+let myPara = document.querySelector("p");
+// myPara.getAttribute("class");
+// console.log(myPara);
+
+// myPara.setAttribute("class", "newClass");
+
+myPara.classList.add("newClass");
+myPara.classList.remove("newClass");
