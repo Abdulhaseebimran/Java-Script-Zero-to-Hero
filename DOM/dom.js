@@ -34,29 +34,72 @@
 
 // practice questions
 
-let h2 = document.querySelector("h2");
+// let h2 = document.querySelector("h2");
 // console.dir(h2);
 
-console.dir(h2.innerText);
+// console.dir(h2.innerText);
 
-h2.innerText = h2.innerText + " form Apna College Students";  // concatination
-console.dir(h2.innerText);
+// h2.innerText = h2.innerText + " form Apna College Students";  // concatination
+// console.dir(h2.innerText);
 
 // 2nd question
 
-let divs = document.querySelectorAll("div");
-console.log(divs);
+// let divs = document.querySelectorAll("div");
+// console.log(divs);
 
-let idx = 1;
-for(i of divs){
-    // console.log(i.innerText);
-    // console.log(i.innerHTML);
-    i.innerText = `New Unique value ${idx}`;
-    idx++;
-}
+// let idx = 1;
+// for(i of divs){
+//     // console.log(i.innerText);
+//     // console.log(i.innerHTML);
+//     i.innerText = `New Unique value ${idx}`;
+//     idx++;
+// }
 
-console.log(i);
+// console.log(i);
 
 // divs[0].innerText = "New Unique value 1";
 // divs[1].innerText = "New Unique value 2";
 // divs[2].innerText = "New Unique value 3";
+
+// attributes
+
+// let a = document.querySelector("div");
+// console.log(a);
+
+// let id = a.getAttribute("id");
+// console.log(id);
+
+// let nameAtr = a.getAttribute("name");
+// console.log(nameAtr);
+
+// let para = document.querySelector("p");
+// console.log(para.getAttribute("class"));
+
+// console.log(para.setAttribute("class", "myPara"));
+// para.innerText = "Hello Duniya:)";
+// para.style.color = "white";
+// para.style.fontSize = "20px";
+
+// // style attributes
+
+// a.style.backgroundColor = "red";
+// a.style.backgroundColor = "blue";
+
+// a.style.fontSize = "20px";
+// a.style.border = "2px solid black";
+// a.style.borderRadius = "10px";
+// a.style.cursor = "pointer";
+
+// create element and append child
+
+let newBtn = document.createElement("button");
+newBtn.innerText = "Click Me!";
+console.log(newBtn);
+
+// let div = document.querySelector("div");
+let p = document.querySelector("p");
+// div.append(newBtn)
+// div.prepend(newBtn);
+// div.before(newBtn);
+// div.after(newBtn);
+p.after(newBtn);

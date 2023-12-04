@@ -24,3 +24,11 @@ button{
     text-align: center;
     border: 1px solid black;
 }
+
+#box{
+    background-color: green;
+    height: 250px;
+    width: 150px;
+    color: white;
+    padding: 10px 10px;
+}
