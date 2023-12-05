@@ -1,0 +1,21 @@
+div{
+    background-color: dodgerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px;
+    color: white;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+p{
+    font-size: 18px;
+}
