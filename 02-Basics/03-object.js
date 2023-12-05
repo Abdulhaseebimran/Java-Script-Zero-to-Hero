@@ -31,4 +31,66 @@ myObj.greeting = function(){
     console.log(`hello js user ${this.name}`);
 }
 
-console.log(myObj.greeting());
+// console.log(myObj.greeting);
+
+// const tinder = new Object(); // singeltone object
+
+const tinder = {}; 
+
+tinder.id = "123";
+tinder.name = "tinder";
+tinder.age = 5;
+
+// console.log(tinder);
+
+const regulerUser = {
+    name: "Abdul Haseeb",
+    age: 20,
+    loctions: "Karachi",
+    fullName: {
+        username:{
+            firstName: "Abdul",
+            lastName: "Haseeb"
+        }
+    }
+};
+
+// console.log(regulerUser.fullName?.username?.firstName.toUpperCase());
+
+const obj1 = {1: "one", 2: "two", 3: "three"};
+const obj2 = {4: "four", 5: "five", 6: "six"};
+
+// const obj3 = { obj1, obj2 };
+
+// const obj3 = Object.assign({}, obj1, obj2);
+
+const obj3 = {...obj1, ...obj2};
+
+console.log(obj3);
+console.log(Object.keys(obj3));
+console.log(Object.values(obj3)); // array me values return karega
+console.log(Object.entries(obj3)); // array me array return karega
+
+console.log(tinder.hasOwnProperty("name")); // check the property is exist or not
+
+const course = {
+    name: "JS",
+    duration: 2,
+    price: 200,
+    isFree: false,
+    courseInstrutor: "Hitesh",
+};
+
+const {courseInstrutor: intructor} = course; // destructuring the object
+
+console.log(intructor);
+
+// API => Application Programming Interface
+
+// CRUD => Create, Read, Update, Delete
+
+// {
+//     "name": "Abdul Haseeb",
+//     "age": 20,
+//     "Location": "Karachi"
+// }
