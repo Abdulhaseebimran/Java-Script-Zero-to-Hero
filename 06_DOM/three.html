@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | NodeLists | create elements</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 100 + 1);
+    div.setAttribute("title", "This is a div");
+    div.style.backgroundColor = "Blue";
+    div.style.padding = "10px";
+    div.style.fontSize = "20px";
+    // div.innerText = "This is a div";
+
+    const append = document.createTextNode("This is a div");
+    div.appendChild(append);
+    document.body.appendChild(div); // print on screen this div element
+</script>
+</html>

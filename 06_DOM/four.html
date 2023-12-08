@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | edit and delete element</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguages (langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguages('Python');
+    addLanguages('Java');
+
+    function addOptiLanguage (langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addOptiLanguage('C++');
+    addOptiLanguage('C#');
+
+    // EDIT element
+
+    const editLanguage = document.querySelector('li:nth-child(2)');
+    // editLanguage.innerHTML = "Jquery"; // sometimes not a optimize way
+    const newLi = document.createElement('li');
+    newLi.textContent = "PHP";
+    editLanguage.replaceWith(newLi);
+
+
+    const editLanguage2 = document.querySelector('li:nth-child(3)');
+    const newLi2 = document.createElement('li');
+    newLi2.textContent = "Ruby";
+    editLanguage2.replaceWith(newLi2);
+
+    const firstLang = document.querySelector('li:first-child');
+    firstLang.outerHTML = "<li>HTML</li>";
+
+    // DELETE element
+
+    const deleteLang = document.querySelector('li:nth-child(2)');
+    deleteLang.remove();
+
+    const firstLangDelete = document.querySelector('li:first-child');
+    firstLangDelete.remove();
+</script>
+</html>
