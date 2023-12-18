@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut and clearTimeout</title>
+</head>
+<body>
+    
+    <h1>JS with Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+  <script>
+    const sayName = function() {
+        console.log("Haseeb");
+    }
+   
+    const changeText = function() {
+        document.querySelector('h1').innerHTML = "Hello World";
+    }
+
+    const changeMe = setTimeout(changeText, 2000);
+    setTimeout(sayName, 3000);
+
+    // clearTimeout(changeMe); // reference to the timeout
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe);
+        console.log("Stopped");
+    })
+  </script> 
+</html>
