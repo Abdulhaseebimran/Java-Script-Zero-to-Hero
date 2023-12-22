@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scopping in js</title>
+</head>
+<body style="background-color: black;"> 
+    <button id="orange">
+        orange
+    </button>
+    <button id="green">
+        Green
+    </button>
+</body>
+<script>
+    // const orange = document.querySelector('#orange');
+    // const green = document.querySelector('#green');
+    // orange.addEventListener('click', () => {
+    //     document.body.style.backgroundColor = "orange";
+    // });
+    // green.addEventListener('click', () => {
+    //     document.body.style.backgroundColor = "green";
+    // });
+
+    function clickHandler (color){
+        // document.body.style.backgroundColor = color;
+
+        return function(){
+            document.body.style.backgroundColor = color;
+        }
+    }
+
+    document.querySelector('#orange').addEventListener('click', clickHandler('orange'));
+    document.querySelector('#green').addEventListener('click', clickHandler('green'));
+</script>
+</html>
